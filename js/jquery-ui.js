@@ -12517,7 +12517,7 @@ $.ui.position = {
 $.widget( "ui.progressbar", {
 	version: "1.10.3",
 	options: {
-		max: 100,
+		max: 150,
 		value: 0,
 
 		change: null,
@@ -12602,7 +12602,7 @@ $.widget( "ui.progressbar", {
 	},
 
 	_percentage: function() {
-		return this.indeterminate ? 100 : 100 * ( this.options.value - this.min ) / ( this.options.max - this.min );
+		return this.indeterminate ? 150 : 150 * ( this.options.value - this.min ) / ( this.options.max - this.min );
 	},
 
 	_refreshValue: function() {
@@ -12657,7 +12657,7 @@ $.widget( "ui.slider", $.ui.mouse, {
 	options: {
 		animate: false,
 		distance: 0,
-		max: 100,
+		max: 180,
 		min: 0,
 		orientation: "horizontal",
 		range: false,
